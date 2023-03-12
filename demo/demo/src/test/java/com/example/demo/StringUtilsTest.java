@@ -11,7 +11,7 @@ public class StringUtilsTest {
     public void testVowelsEmpty() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     @Test()
@@ -26,49 +26,49 @@ public class StringUtilsTest {
     public void testVowelsOneVowel() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("a");
-        Assert.assertEquals(result, "a");
+        Assert.assertEquals("a", result);
     }
 
     @Test()
     public void testVowelsOneConsonant() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("w");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     @Test()
     public void testVowelsTwoConsonants() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("ww");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     @Test()
     public void testVowelsTwoVowels() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("ae");
-        Assert.assertEquals(result, "ae");
+        Assert.assertEquals("ae", result);
     }
 
     @Test()
     public void testVowelsShuffle() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("aqzegqree");
-        Assert.assertEquals(result, "aeee");
+        Assert.assertEquals("aeee", result);
     }
     
     @Test()
     public void testVowelsShuffleWithUppercase() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("aqzEgqreE");
-        Assert.assertEquals(result, "aEeE");
+        Assert.assertEquals("aEeE", result);
     }
 
     @Test()
     public void testVowelsWithNumber() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.vowels("1");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     /* TEST UNIQ VOWELS */
@@ -76,7 +76,7 @@ public class StringUtilsTest {
     public void testUniqueVowelsEmpty() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     @Test()
@@ -91,48 +91,48 @@ public class StringUtilsTest {
     public void testUniqueVowelsOneVowel() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("a");
-        Assert.assertEquals(result, "a");
+        Assert.assertEquals("a", result);
     }
 
     @Test()
     public void testUniqueVowelsOneConsonant() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("w");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     @Test()
     public void testUniqueVowelsTwoConsonants() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("ww");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 
     @Test()
     public void testUniqueVowelsTwoVowels() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("ae");
-        Assert.assertEquals(result, "ae");
+        Assert.assertEquals("ae", result);
     }
 
     @Test()
     public void testUniqueVowelsShuffle() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("aqzegqree");
-        Assert.assertEquals(result, "ae");
+        Assert.assertEquals("ae", result);
     }
     
     @Test()
     public void testUniqueVowelsShuffleWithUppercase() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("aqzEgqreE");
-        Assert.assertEquals(result, "aEe");
+        Assert.assertEquals("aEe", result);
     }
 
     @Test()
     public void testUniqueVowelsWithNumber() {
         StringUtils stringUtils = new StringUtils();
         String result = stringUtils.uniqueVowels("1");
-        Assert.assertEquals(result, "");
+        Assert.assertEquals("", result);
     }
 }
